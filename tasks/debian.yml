@@ -19,6 +19,7 @@
     state: present
     filename: cuda
     update_cache: "{{ 'yes' if not ansible_check_mode | bool else 'no' }}"
+  register: nvidia_repo_cuda_apt_repo
 
 - name: NVIDIA Machine Learning repository is registered
   apt_repository:
