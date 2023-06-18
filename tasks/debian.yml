@@ -9,8 +9,8 @@
 
 - name: apt key for NVIDIA is added
   apt_key:
-    url: "https://developer.download.nvidia.com/compute/cuda/repos/{{ nvidia_repo_distarch }}/7fa2af80.pub"
-    id: 7fa2af80
+    url: "https://developer.download.nvidia.com/compute/cuda/repos/{{ nvidia_repo_distarch }}/3bf863cc.pub"
+    id: 3bf863cc
     state: present
 
 - name: NVIDIA CUDA repository is registered
